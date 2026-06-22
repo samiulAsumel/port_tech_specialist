@@ -26,16 +26,29 @@ Markets: Rotterdam · Hamburg · Singapore · DP World (global) · Germany EU Bl
 ## Features
 
 - 220 lesson grid with phase grouping
+- Live search by lesson number, track, or topic — composes with filters
 - Filter by track: RHCSA / Ansible / Web Dev / Completed / Not started
-- Progress stats: total, Linux/RHCE, Web Dev, percentage
-- Progress bar
+- Progress stats: total, RHCSA, Ansible/RHCE, Web Dev, percentage
+- Animated progress bar
+- Dark / light theme toggle, persisted and respects system preference
+- Export and import progress as JSON — portable across browsers/devices
+- Keyboard shortcuts: `/` search, arrow keys to navigate, `Enter` to start, `C` to complete, `Esc` to clear
 - Undo last completion
 - Reset with confirmation
 - Progress persists in browser localStorage — no account needed
+- Installable as a PWA (web app manifest + favicon set)
+- Accessible: keyboard-navigable lesson tiles, ARIA labels, focus states, reduced-motion support
 
 ## Stack
 
 Plain HTML + CSS + JavaScript. No dependencies. No build step. Works offline.
+
+## Deploy
+
+Static site — deployable as-is to:
+
+- **GitHub Pages** — serve from the repo root or `gh-pages` branch
+- **Cloudflare Workers / Pages** — see `wrangler.jsonc` on the `cloudflare/workers-autoconfig` branch (serves the repo root as static assets)
 
 ## Related
 
